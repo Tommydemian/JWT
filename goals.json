@@ -1,0 +1,13 @@
+[
+    { "name": "Learn a new language", "completed": false },
+    { "name": "Run a marathon", "completed": true },
+    { "name": "Travel to Japan", "completed": false },
+    { "name": "Write a book", "completed": false },
+    { "name": "Get a promotion", "completed": true },
+    { "name": "Learn a musical instrument", "completed": false },
+    { "name": "Volunteer at a homeless shelter", "completed": true },
+    { "name": "Visit all 7 continents", "completed": false },
+    { "name": "Start a business", "completed": false },
+    { "name": "Learn to code", "completed": true }
+  ]
+  
