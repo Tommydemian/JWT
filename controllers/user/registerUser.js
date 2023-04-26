@@ -9,6 +9,7 @@ const generateJWT = require('../utils/generateJWT')
 const registerUser = tryCatch( async(req, res, next) => {
     const {name, email, password} = req.body;
     // first check if all the fields were passed.
+    console.log(req.body);
     if (!name || !email || !password) {
         return next(createNewCustomAPIError(400, 'one or more of the required fields is not completed'))  
     }

@@ -5,7 +5,14 @@ const tryCatch = require('../../utils/tryCatch')
 const { createNewCustomAPIError } = require('../../errors/customAPIError')
 
 const getCurrentUser = tryCatch( async(req, res, next) => {
-    res.status(200).json({ message: 'get current user' })
+    const {_id, name, email } = await User.findById(req.user.id) // set in the middleware.
+
+    res.status(200).json({
+        id: _id, 
+        name: name,
+        email: email
+    })
+
  });
 
  module.exports = getCurrentUser
